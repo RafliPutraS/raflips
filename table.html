@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>TABEL MAHASISWA</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">    
+    <title>Bestih Jquery</title>
   <style>
     body{
     background-color: greenyellow;
@@ -92,6 +97,20 @@
 		<td><button>HAPUS</button></td>
 	</tr>
 	</table>
-
+	<div class="tombol">
+        <a onclick="alert('Apakah kamu ingin kembali ke Main Page?')" href="../indexspa.html">
+            <button>Kembali</button>
+        </a>
+    </div>
+<script type="text/javascript">
+    $(document).ready(() => {
+        $("td").click(function (event) {
+        alert("Saat ini anda mengklik kolom yang berisi kata " + $(this).html() + "!");
+    });
+    $("th").click(function (event) {
+        alert("Saat ini anda mengklik kolom yang berisi kata " + $(this).html() + "!");
+    });
+});
+    </script>
 </body>
 </html>
